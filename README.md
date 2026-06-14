@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/logo.png" alt="claud — Claude pixel mascot" width="200">
+</p>
+
 # claud — Claude Capability Router 🧭
 
 > **ES:** Un skill que sabe **qué puede hacer Claude y dónde**. Pregúntale `/claud ¿puedo hacer X?`
@@ -13,6 +17,14 @@ otras**. `claud` es ese conocimiento compartido: un enrutador de capacidades, bi
 **anclado a una base de conocimiento verificada** (no inventa). · *Each Claude surface works
 differently but doesn't natively know what the others can do; `claud` is that shared, grounded,
 bilingual knowledge.*
+
+<p align="center">
+  <img src="assets/generated/mascot-1.png" width="110">
+  <img src="assets/generated/mascot-2.png" width="110">
+  <img src="assets/generated/mascot-3.png" width="110">
+  <img src="assets/generated/mascot-4.png" width="110">
+</p>
+<p align="center"><sub>Mascota en pixel art — generada con Higgsfield · <code>gpt_image_2</code>. / Pixel-art mascot.</sub></p>
 
 ---
 
