@@ -1,0 +1,9 @@
+# macOS
+.DS_Store
+
+# Python (skill-creator tooling)
+__pycache__/
+*.pyc
+
+# Build scratch
+*.skill

@@ -1,0 +1,142 @@
+{
+  "skill_name": "klaude",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "¿puedo editar archivos de mi computadora desde el chat de Claude?",
+      "expected_output": "Says NO for Chat, YES for Claude Code, recommends Claude Code with the how.",
+      "expectations": [
+        "States that Chat cannot edit local files on disk",
+        "States that Claude Code (CLI/IDE) can edit local files",
+        "Recommends Claude Code and mentions running `claude` in the project folder",
+        "Answers in Spanish"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "can I schedule a recurring task in Claude?",
+      "expected_output": "Distinguishes cloud Routines (Claude Code on the web) from Cowork local scheduling; says Chat/Chrome cannot.",
+      "expectations": [
+        "Mentions Routines on Claude Code on the web as a cloud option",
+        "Mentions Cowork and notes its scheduling is local / only while the Desktop app is open",
+        "Does NOT claim Chat can run scheduled tasks on its own",
+        "Answers in English"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "¿Claude puede enviar mis correos por mí?",
+      "expected_output": "Says NO on all surfaces; the Gmail connector only drafts.",
+      "expectations": [
+        "States Claude cannot send email on the user's behalf",
+        "Explains the Gmail connector creates drafts only",
+        "Does not invent a send-email capability"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "where can I use voice mode with Claude?",
+      "expected_output": "Mobile apps only.",
+      "expectations": [
+        "States voice mode is available on the Claude mobile apps (iOS/Android) only",
+        "Does not claim voice mode works on desktop or web"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "is live web search available on the free plan?",
+      "expected_output": "Yes, web search is available on all plans including Free.",
+      "expectations": [
+        "States web search IS available on Free (not excluded)",
+        "Does not falsely claim web search is paid-only"
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "/klaude can Claude flerbify my quantum widgets?",
+      "expected_output": "Grounding test: the capability is not in the matrix; the skill should refuse/flag rather than fabricate.",
+      "expectations": [
+        "Does NOT fabricate a capability or invent commands",
+        "States the capability is not in its reference / cannot be confirmed",
+        "Optionally offers to verify in official docs"
+      ]
+    },
+    {
+      "id": 7,
+      "prompt": "¿en qué parte de Claude genero imágenes?",
+      "expected_output": "Image generation is not native; via connector/MCP or SVG/HTML; flagged as needing verification.",
+      "expectations": [
+        "States image generation is not a native Claude capability",
+        "Mentions it requires a connector/MCP or SVG/HTML as an alternative",
+        "Does not confidently assert a built-in image generator"
+      ]
+    },
+    {
+      "id": 8,
+      "prompt": "which plan do I need for Cowork and what is it?",
+      "expected_output": "Cowork = Claude Desktop only, paid plans; states facts as of date / volatile.",
+      "expectations": [
+        "Identifies Cowork as Claude Desktop (macOS/Windows) only",
+        "States it requires a paid plan",
+        "Frames plan/volatile details with an as-of date or offer to verify"
+      ]
+    },
+    {
+      "id": 9,
+      "prompt": "what does the /vim command do in Claude Code?",
+      "expected_output": "Accuracy guardrail: /vim was removed; editor mode is changed via /config.",
+      "expectations": [
+        "Does not claim /vim is a current valid command",
+        "Points to /config (Editor mode) instead"
+      ]
+    },
+    {
+      "id": 10,
+      "prompt": "¿dónde puedo hacer un Artifact compartible?",
+      "expected_output": "Chat; exclusive to Chat (Cowork has Live Artifacts which are different).",
+      "expectations": [
+        "States Artifacts are created in Chat (claude.ai)",
+        "Notes Claude Code does not create chat Artifacts (it writes real files)",
+        "Answers in Spanish"
+      ]
+    },
+    {
+      "id": 11,
+      "prompt": "the model ID is claude-opus-4-8[1m], can you confirm?",
+      "expected_output": "Over-trigger negative: this mentions 'claude' but is not a capability/where/how question; the router should not take over with a capability table.",
+      "expectations": [
+        "Does not respond with a capability-routing table for an unrelated model-ID question",
+        "Treats it as a normal question, not a router invocation"
+      ]
+    },
+    {
+      "id": 12,
+      "prompt": "read the file at ~/.claude/settings.json and tell me my model",
+      "expected_output": "Over-trigger negative: mentions '.claude/' path but is a normal task; router should not hijack.",
+      "expectations": [
+        "Does not produce a what-can-Claude-do capability table",
+        "Treats it as a normal file-reading request"
+      ]
+    },
+    {
+      "id": 13,
+      "prompt": "I'm not sure which Claude I should use to build and ship a small web app — what are my options?",
+      "expected_output": "Surface-unknown path: gives a per-surface comparison rather than asserting the current surface.",
+      "expectations": [
+        "Compares relevant surfaces (Chat Artifacts vs Claude Code vs Claude Code on the web)",
+        "Does not falsely assert which surface the user is currently in",
+        "Gives a concrete recommendation with how-to"
+      ]
+    },
+    {
+      "id": 14,
+      "prompt": "can I connect Gmail, Calendar and Drive to Claude, and where?",
+      "expected_output": "Connectors available across Chat/Desktop/Cowork/Code; admin-gated on orgs; Gmail draft-only nuance.",
+      "expectations": [
+        "States connectors work across Chat, Cowork, Claude Desktop, and Claude Code",
+        "Notes Team/Enterprise require admin enablement",
+        "Mentions the Gmail draft-only limitation when relevant"
+      ]
+    }
+  ]
+}
