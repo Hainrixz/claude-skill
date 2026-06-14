@@ -33,6 +33,14 @@ still reading like "Claude".*
 > sincronizan** entre superficies: instálalo en cada una donde lo quieras.
 
 ### 1) Claude Code (CLI / IDE)
+**Un comando / one command** — descarga e instala en `~/.claude/skills/claud`:
+```bash
+curl -fsSL https://raw.githubusercontent.com/Hainrixz/claude-skill/main/install.sh | bash
+```
+Usa el script [`install.sh`](install.sh) (`./install.sh --uninstall` para quitarlo;
+`CLAUD_LINK=1 ./install.sh` para symlink desde un clon local).
+
+O manual / or manually:
 ```bash
 git clone https://github.com/Hainrixz/claude-skill.git
 cp -R claude-skill/claud ~/.claude/skills/claud      # o: ln -s "$PWD/claude-skill/claud" ~/.claude/skills/claud
