@@ -1,15 +1,15 @@
 ---
-name: klaude
+name: claud
 license: Apache-2.0
 description: >-
   Que puede hacer Claude y donde (Chat, Claude Code, Code web, Cowork, Chrome), con
-  el como exacto. What Claude can do & where, across surfaces. Usa /klaude o pregunta
+  el como exacto. What Claude can do & where, across surfaces. Usa /claud o pregunta
   una capacidad.
 ---
 
-# Klaude — Claude Capability Router
+# Claud — Claude Capability Router
 
-Invoked as `/klaude` (or auto-triggered). Triggers on genuine "can Claude do X / where /
+Invoked as `/claud` (or auto-triggered). Triggers on genuine "can Claude do X / where /
 how / which surface" questions in ES or EN ("¿puede Claude...?", "can Claude...?", "¿se
 puede en el chat?", "where do I edit files?", "how do I schedule a task?"). Does NOT
 trigger on the mere word Claude (self-reference, model IDs like `claude-opus-*`/`[1m]`,

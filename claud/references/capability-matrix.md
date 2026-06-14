@@ -1,6 +1,6 @@
 # Capability Matrix — single source of truth
 
-Authoritative dataset for the `klaude` router. The per-surface `how` lives **only** here
+Authoritative dataset for the `claud` router. The per-surface `how` lives **only** here
 (never duplicate it elsewhere). Every claim is traceable to `sources.md`.
 
 **Schema** (one YAML block per capability):

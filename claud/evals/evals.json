@@ -1,5 +1,5 @@
 {
-  "skill_name": "klaude",
+  "skill_name": "claud",
   "evals": [
     {
       "id": 1,
@@ -53,7 +53,7 @@
     },
     {
       "id": 6,
-      "prompt": "/klaude can Claude flerbify my quantum widgets?",
+      "prompt": "/claud can Claude flerbify my quantum widgets?",
       "expected_output": "Grounding test: the capability is not in the matrix; the skill should refuse/flag rather than fabricate.",
       "expectations": [
         "Does NOT fabricate a capability or invent commands",
