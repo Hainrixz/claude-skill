@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+# Copyright (c) 2026 Enrique Rocha (@soyenriquerocha)
+# SPDX-License-Identifier: Apache-2.0
+# id: er-ac5b7d18
 #
 # claud — one-command installer for Claude Code.
 # Installs the `claud` capability-router skill into ~/.claude/skills/claud.

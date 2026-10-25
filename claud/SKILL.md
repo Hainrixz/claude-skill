@@ -6,6 +6,7 @@ description: >-
   el como exacto. What Claude can do & where, across surfaces. Usa /claud o pregunta
   una capacidad.
 ---
+<!-- Copyright (c) 2026 Enrique Rocha (@soyenriquerocha) · tododeia.com · id er-ac5b7d18 -->
 
 # Claud — Claude Capability Router
 

@@ -120,3 +120,10 @@ Las pruebas de regresión viven en `claud/evals/evals.json` (grounding, cross-su
 
 ## Licencia / License
 Apache-2.0 — ver [`LICENSE`](LICENSE).
+
+<!-- marca-agua:inicio -->
+
+---
+
+<sub>Hecho por **Enrique Rocha (@soyenriquerocha)** · [tododeia.com](https://www.tododeia.com)⁠​‌‌​​‌​‌​‌‌‌​​‌​​​‌​‌‌​‌​‌‌​​​​‌​‌‌​​​‌‌​​‌‌​‌​‌​‌‌​​​‌​​​‌‌​‌‌‌​‌‌​​‌​​​​‌‌​​​‌​​‌‌‌​​​⁠</sub>
+<!-- marca-agua:fin -->
